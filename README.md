@@ -1,6 +1,8 @@
-# DMQL_Project
+## DMQL_Project
 
-Follow the below steps to set up the database
+# Follow the below steps to set up the database
+
+Step 0: Download the 2 csv files from this link https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews/data and keep it in the same folder as "dataset.py" file
 
 Step 1: Execute the "dataset.py" file to generate AmazonBooks.csv data file which serves as a base for this database.
 
@@ -12,16 +14,18 @@ Step 3: Decompose the AmazonBooks table into smaller main tables which satisfies
 Step 4: Extract data from AmazonBooks table into the 6 Main Tables using "load.sql" file
 The data from the AmazonBooks table was then distributed into the corresponding main tables using INSERT statements. This process involved selecting distinct data and ensuring proper relationships among the tables. 
 
-Step 5: Use the index.sql file to create indexes on tables for better query performance.
+Step 5: Use the "index.sql" file to create indexes on tables for better query performance.
+
+Step 6. Also, we have attached the "queries.sql" file which consists of insert, update, delete and select queries.
 
 
-Follow below steps to set up a running website to query from the website and display the results.
+# Follow below steps to set up a running website to query from the website and display the results.
 
-Step 1: Maintain the same directory format "DMQL_Project_Website"
+Step 1: Maintain the same directory format "Website"
 
 Step 2: Install the required dependencies mentioned in the "requirements.txt" using command pip install -f requirements.txt"
 
-Step 3: Run the app.py file with commaand python "app.py"
+Step 3: Run the app.py file with command python "app.py"
 
 Step 4: Go to any browser and go to "http://localhost:5000/"
 
