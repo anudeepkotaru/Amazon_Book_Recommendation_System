@@ -14,4 +14,4 @@ CREATE INDEX idx_publishers_publisher ON Publishers(publisher);
 
 CREATE INDEX idx_sales_category ON Sales(category);
 CREATE INDEX idx_sales_top_country ON Sales(top_country);
-CREATE INDEX idx_sales_language_price ON Reviews(language, price);
+CREATE INDEX idx_sales_language_price ON Sales(language, price);

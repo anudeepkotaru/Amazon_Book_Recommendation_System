@@ -7,8 +7,8 @@ select distinct user_id, profile_name, user_email from amazonbooks;
 insert into reviews (book_id, user_id, ratings_count, review_helpfulness, review_score, review_time, review_summary)
 select distinct b.book_id, u.user_id, ab.ratings_count, ab.review_helpfulness, ab.review_score, ab.review_time, ab.review_summary
 from AmazonBooks ab
-join Books b on ab.title = b.title -- Assuming title uniquely identifies books
-join Users u on ab.user_id = u.user_id; -- Assuming user_id in AmazonBooks matches with Users
+join Books b on ab.title = b.title 
+join Users u on ab.user_id = u.user_id;
 
 insert into authors (author, author_email, book_id)
 select distinct a.author, a.author_email, b.book_id from amazonbooks a join books b on a.author = b.author ;
