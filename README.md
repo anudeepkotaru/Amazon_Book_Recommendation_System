@@ -2,6 +2,8 @@
 
 # Follow the below steps to set up the database
 
+Step 0: Download the 2 csv files from this link https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews/data and keep it in the same folder as "dataset.py" file
+
 Step 1: Execute the "dataset.py" file to generate AmazonBooks.csv data file which serves as a base for this database.
 
 Step 2: Create a mega table called Amazonbooks using "megaTableCreate.sql"  and load the AmazonBooks.csv file using import option in postgres.
