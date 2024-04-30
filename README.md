@@ -1,4 +1,4 @@
-## DMQL_Project
+## DMQL_Project - Team Data Pirates - Satya Anudeep Kotaru, Bhavya Teja Inturi, Vineet Sreeram
 
 # Follow the below steps to set up the database
 
