@@ -21,8 +21,3 @@ select distinct a.category, a.top_country, a.books_sold, a.price, a.language, p.
 from amazonbooks a
 join publishers p on a.publisher = p.publisher and a.published_year = p.published_year
 where exists ( select 1 from books b where b.book_id = p.book_id and b.title = a.title );
-
-
--- WHERE Clause: Ensures that there is a corresponding book_id in the Books table that matches the book_id 
--- in the Publishers table and the title in the AmazonBooks table. This step is crucial to verify that the 
--- data being inserted corresponds to actual books registered in the system.
